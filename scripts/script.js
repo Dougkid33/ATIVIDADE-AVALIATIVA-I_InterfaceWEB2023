@@ -1,14 +1,14 @@
 $(function() {
-    // Configuração dos datepickers
+    // Linhas de código para pegar o datepicker
     $("#datepicker").datepicker();
     $("#datepickerreturn").datepicker();
     
-    // Ação do botão enviar
+    // botão submit
     $( ".widget input[type=submit], .widget a, .widget button" ).button();
     $("input[type='submit']").click(function(event) {
-      event.preventDefault(); // previne o envio do formulário
+      event.preventDefault(); 
       
-      // Verifica se todos os campos foram preenchidos
+      //condicional pra validar se os campos foram preenchidos
       if ($("#valordiaria input").val() == "" || $("#datepicker").val() == "" || $("#datepickerreturn").val() == "") {
         alert("Preencha todos os campos.");
         return;
