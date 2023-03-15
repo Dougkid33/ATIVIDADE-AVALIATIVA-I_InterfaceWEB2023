@@ -29,11 +29,19 @@ $(function() {
       
       var valordiaria = parseFloat($("#valordiaria input").val());
       var totaldiarias = diferenca == 0 ? diferenca * 0.5 : diferenca - 1;
-      var valortotal = totaldiarias * valordiaria + valordiaria / 2;
+      console.log('Valor total das diárias: ',totaldiarias);
+      if(totaldiarias !=0){
+        var valortotal = totaldiarias * valordiaria + valordiaria / 2;
+      }
+      else if(totaldiarias == 0){
+        var metadediaria = valordiaria/2;
+        var valortotal = metadediaria;
+      }
+      
       
       $("#modal").html("<p>O valor total é: R$ " + valortotal.toFixed(2) + "</p>");
       $("#modal").dialog();
-      console.log(valortotal);
+      console.log('Valor total: ',valortotal);
     });
   });
   
