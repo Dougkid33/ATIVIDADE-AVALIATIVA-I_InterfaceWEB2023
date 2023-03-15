@@ -28,7 +28,7 @@ $(function() {
       }
       
       var valordiaria = parseFloat($("#valordiaria input").val());
-      var totaldiarias = diferenca == 0 ? 0.5 : diferenca - 1;
+      var totaldiarias = diferenca == 0 ? diferenca * 0.5 : diferenca - 1;
       var valortotal = totaldiarias * valordiaria + valordiaria / 2;
       
       $("#modal").html("<p>O valor total é: R$ " + valortotal.toFixed(2) + "</p>");
