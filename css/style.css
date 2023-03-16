@@ -6,17 +6,19 @@
   }
 
   body{
-    background: rgb(63,94,251);
+    background: rgb(56, 17, 105);
     
   }
 .titulo{
     color: antiquewhite;
     text-align: center;
+    font-family: Arial, sans-serif;
     
 }
 .subtitle{
     color: antiquewhite;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 .formulario{
     background: rgb(95, 55, 128);
@@ -29,6 +31,7 @@
     margin-top: 100px;
     margin-bottom: 16px;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .valordiaria{
@@ -38,6 +41,7 @@
     margin-bottom: 16px;
     text-align: center;
     height: 30px;
+    font-family: Arial, sans-serif;
 
 }
 
@@ -48,6 +52,7 @@
     margin-bottom: 16px;
     text-align: center;
     height: 30px;
+    font-family: Arial, sans-serif;
 }
 
 .dataretorno{
@@ -57,6 +62,7 @@
     margin-bottom: 16px;
     text-align: center;
     height: 30px;
+    font-family: Arial, sans-serif;
 }
 
 .checkbox{
@@ -65,12 +71,16 @@
     margin-top: 20px;
     margin-bottom: 16px;
     text-align: center;
-    height: 30px;
+    height: 60px;
+    font-family: Arial, sans-serif;
 }
 label{
     align-items: center;
     text-align: center;
     margin-top: 20px;
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+    
 
 }
 input[type=text] {
@@ -94,7 +104,7 @@ input[type=number] {
 {   display: flex;
     position: relative;
     align-items: right;
-    top: 2px;
+    top: 1px;
     left: 350px;
     
 }

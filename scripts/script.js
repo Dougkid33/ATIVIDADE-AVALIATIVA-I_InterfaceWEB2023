@@ -1,6 +1,8 @@
 $(function() {
     $("#datepicker").datepicker();
     $("#datepickerreturn").datepicker();
+    $( "input[type='checkbox']" ).checkboxradio();
+
     
     $( ".widget input[type=submit], .widget a, .widget button" ).button();
     $("input[type='submit']").click(function(event) {
